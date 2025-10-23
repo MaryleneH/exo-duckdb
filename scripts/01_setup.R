@@ -20,7 +20,7 @@ if (file.exists(env_file)) {
   }
 }
 
-con <- dbConnect(duckdb::duckdb(), dbdir = "duckdb/db.duckdb")
+con <- dbConnect(duckdb::duckdb())
 
 # Appliquer PRAGMAs
 pragmas_path <- file.path("config", "duckdb_pragmas.sql")
